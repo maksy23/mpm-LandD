@@ -1,0 +1,37 @@
+///////////////////////////////////
+// Information and Pictures section
+.section-info {
+  max-width: 114rem;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  &__item {
+    flex: 1;
+  }
+
+  &__text {
+    max-width: 54rem;
+    margin-right: 6rem;
+    // background-color: white;
+  }
+
+  &__images {
+    // max-width: 54rem;
+    // background-color: white;
+  }
+}
+
+///////////////////////////////////
+// Features Section
+.feature-container {
+  display: flex;
+  justify-content: center;
+}
+
+///////////////////////////////////
+// Card/Tours Section
+.tours-container {
+  display: flex;
+  justify-content: center;
+}
