@@ -35,3 +35,27 @@
   display: flex;
   justify-content: center;
 }
+
+///////////////////////////////////
+// Book Section
+.book-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+///////////////////////////////////
+// Footer Info Section
+.footer__info-container {
+  max-width: 114rem;
+  margin: auto;
+  display: flex;
+}
+
+.footer__info-box {
+  flex: 1;
+}
+
+.footer__copyright {
+  max-width: 43.2rem;
+  margin-left: auto;
+}
