@@ -8,6 +8,11 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s;
 
+  @include respond(tab-port) {
+    max-width: 60%;
+    margin: 0 auto 5rem !important;
+  }
+
   &:not(:last-child) {
     margin-right: 6rem;
   }

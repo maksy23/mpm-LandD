@@ -4,7 +4,16 @@
   max-width: 114rem;
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: 80rem;
+  }
+
+  @include respond(phone) {
+    height: 73rem;
+  }
 
   &__item {
     flex: 1;
@@ -13,12 +22,27 @@
   &__text {
     max-width: 54rem;
     margin-right: 6rem;
-    // background-color: white;
+    padding-left: 2rem;
+    
+    @include respond(tab-port) {
+      order: 2;
+      display: block;
+      max-width: 85%;
+      margin: 0 auto;
+    }
   }
 
   &__images {
-    // max-width: 54rem;
-    // background-color: white;
+    @include respond(tab-port) {
+      order: 1;
+      display: block;
+      width: 75%;
+      margin: 0 auto 10rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -27,6 +51,10 @@
 .feature-container {
   display: flex;
   justify-content: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 ///////////////////////////////////
@@ -34,6 +62,10 @@
 .tours-container {
   display: flex;
   justify-content: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 ///////////////////////////////////
@@ -49,13 +81,39 @@
   max-width: 114rem;
   margin: auto;
   display: flex;
+  justify-content: space-between;
+
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .footer__info-box {
-  flex: 1;
+  max-width: 45rem;
+  text-align: center;
+
+  @include respond(tab-port) {
+    display: block;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  @include respond(phone) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .footer__copyright {
   max-width: 43.2rem;
   margin-left: auto;
+
+  @include respond(phone) {
+    width: 100%;
+    margin: 0;
+  }
 }
